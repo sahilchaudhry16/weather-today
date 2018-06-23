@@ -1,0 +1,21 @@
+@import 'util/scss/shared.scss';
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica', sans-serif;
+  background-color: $white;
+  color: $black;
+}
+
+body {
+  @media screen and (max-width: 46rem) {
+    padding: 0 20px;
+  }
+}
+
+h1 {
+  color: $black;
+  text-transform: uppercase;
+  font-family: 'TradeGothic', sans-serif;
+}

@@ -1,0 +1,44 @@
+{
+  "name": "chipotle-account-link",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.17.1",
+    "classnames": "^2.2.5",
+    "flexboxgrid-sass": "^8.0.5",
+    "lodash.get": "^4.4.2",
+    "mkdirp": "^0.5.1",
+    "node-sass-chokidar": "0.0.3",
+    "react": "^16.2.0",
+    "react-scripts": "1.0.17",
+    "react-dom": "^16.2.0",
+    "source-map-explorer": "^1.5.0"
+  },
+  "scripts": {
+    "analyze": "source-map-explorer build/static/js/main.*",
+    "prettify-js": "./node_modules/.bin/prettier --single-quote --write \"src/**/*.{js,jsx}\"",
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build-js": "react-scripts build",
+    "delete-public-folder": "rimraf ../public",
+    "copy-public": "./node_modules/.bin/cpx \"./build/**/**.*\" ../public",
+    "create-public": "mkdirp ../public",
+    "build": "npm-run-all build-css build-js",
+    "publish": "npm-run-all build delete-public-folder create-public copy-public",
+    "test": "cross-env CI=true react-scripts test --env=jsdom",
+    "test:debug": "react-scripts --inspect-brk test --runInBand --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "cross-env": "^5.1.4",
+    "esdoc": "^1.0.4",
+    "esdoc-standard-plugin": "^1.0.0",
+    "husky": "^0.14.3",
+    "npm-run-all": "^4.1.2",
+    "prettier": "^1.9.2",
+    "rimraf": "^2.6.2"
+  }
+}

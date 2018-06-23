@@ -1,0 +1,14 @@
+// Shared.scss contains all the files that are to be shared across all components. This scss file needs to be imported in every component's scss files to make use of media queries, fonts, typography etc
+
+// All sass variable go here
+@import './variables.scss';
+
+@import './vendor/flexboxgrid.scss';
+
+@import './fonts.scss';
+
+
+
+.hide-element {
+  display: none;
+}

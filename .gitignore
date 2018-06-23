@@ -1,0 +1,24 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+weather-client/node_modules
+
+# testing
+weather-client/coverage
+
+# production
+weather-client/build
+
+# CSS files
+weather-client/src/**/*.css
+
+# misc
+weather-client/.DS_Store
+
+weather-client/npm-debug.log*
+weather-client/yarn-debug.log*
+weather-client/yarn-error.log*
+weather-client/.vscode/settings.json
+
+
+/weather-client/node_modules/yargs/locales/th.json
