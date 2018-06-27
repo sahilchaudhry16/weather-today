@@ -1,9 +1,4 @@
-Chiptole Account Linking APP
-
-
-Below you will find some information on how to perform common tasks.<br>
-
-The Front end code is available inside the client folder. You could run it in production mode or dev mode. Please contact sravichandran@deloitte.com for the two env file .env.development and .env.production for the client folder.
+Weather Search App
 
 [Available Scripts](#available-scripts)
   - [yarn start](#npm-start)
