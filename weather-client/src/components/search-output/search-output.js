@@ -28,7 +28,7 @@ function SearchOutput({searchResults}) {
     if(searchResults) {
         searchBody = <div className="search-output">
         <div >
-            <div class="card-1">
+            <div className="card-1">
     <h1> {searchResults.title} </h1>
     <ul className="temp-state">
         <li>
@@ -38,38 +38,38 @@ function SearchOutput({searchResults}) {
         <li id="clear"> {Math.round(succesiveDaysWeather[0].currentTemperature)}&deg;C</li>  
       <li id="mph"> {succesiveDaysWeather[0].weatherState.name}</li>
     </ul>
-    <div class="line1"> </div>
-    <div class="line2"> </div>
-    <div class="line3"> </div>
+    <div className="line1"> </div>
+    <div className="line2"> </div>
+    <div className="line3"> </div>
 
-    <div class="tuesday">
-      <div class="day-tues"> {succesiveDaysWeather[1].day} </div>
+    <div className="tuesday">
+      <div className="day-tues"> {succesiveDaysWeather[1].day} </div>
 
     </div>
-    <div class="wednesday">
-      <div class="day-wed"> {succesiveDaysWeather[2].day} </div>
+    <div className="wednesday">
+      <div className="day-wed"> {succesiveDaysWeather[2].day} </div>
     </div>
-    <div class="thursday">
-      <div class="day-thurs"> {succesiveDaysWeather[3].day} </div>
+    <div className="thursday">
+      <div className="day-thurs"> {succesiveDaysWeather[3].day} </div>
     </div>
-    <div class="friday">
-      <div class="day-fri"> {succesiveDaysWeather[4].day} </div>
+    <div className="friday">
+      <div className="day-fri"> {succesiveDaysWeather[4].day} </div>
     </div>
 
-    <ul class= "lows">
-      <li id="high2"> <img class="img-small" src={`img/${succesiveDaysWeather[1].weatherState.imgValue}`} alt={succesiveDaysWeather[1].weatherState.imgName}/> </li>
-      <li id="high" className="img-class"> <img class="img-small" src={`img/${succesiveDaysWeather[2].weatherState.imgValue}`} alt={succesiveDaysWeather[2].weatherState.imgName}/> </li>
-      <li id="high" className="img-class"> <img class="img-small" src={`img/${succesiveDaysWeather[3].weatherState.imgValue}`} alt={succesiveDaysWeather[3].weatherState.imgName}/> </li>
+    <ul className= "lows">
+      <li id="high2"> <img className="img-small" src={`img/${succesiveDaysWeather[1].weatherState.imgValue}`} alt={succesiveDaysWeather[1].weatherState.imgName}/> </li>
+      <li id="high" className="img-class"> <img className="img-small" src={`img/${succesiveDaysWeather[2].weatherState.imgValue}`} alt={succesiveDaysWeather[2].weatherState.imgName}/> </li>
+      <li id="high" className="img-class"> <img className="img-small" src={`img/${succesiveDaysWeather[3].weatherState.imgValue}`} alt={succesiveDaysWeather[3].weatherState.imgName}/> </li>
       <li id="high3"> <img className="img-small" src={`img/${succesiveDaysWeather[3].weatherState.imgValue}`} alt={succesiveDaysWeather[3].weatherState.imgName}/> </li>
     </ul>
     
-    <ul class= "highs">
+    <ul className= "highs">
       <li id="high2"> {Math.round(succesiveDaysWeather[1].maxTemperature)}°</li>
       <li id="high"> {Math.round(succesiveDaysWeather[2].maxTemperature)}° </li>
       <li id="high"> {Math.round(succesiveDaysWeather[3].maxTemperature)}° </li>
       <li id="high3"> {Math.round(succesiveDaysWeather[4].maxTemperature)}° </li>
     </ul>
-    <ul class= "lows">
+    <ul className= "lows">
       <li id="high2"> {Math.round(succesiveDaysWeather[1].minTemperature)}° </li>
       <li id="high"> {Math.round(succesiveDaysWeather[2].minTemperature)}° </li>
       <li id="high"> {Math.round(succesiveDaysWeather[3].minTemperature)}° </li>
